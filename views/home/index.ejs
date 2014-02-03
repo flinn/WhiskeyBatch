@@ -1,0 +1,77 @@
+<div class="container">
+    <div>
+    </div>
+    <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+        <li class="layer" data-depth="0.00"></li>
+        <li class="layer" data-depth="0.10"><div class="background"></div></li>
+        <li class="layer" data-depth="0.15">
+            <ul class="rope depth-10">
+                <li><img src="/images/rope.png" alt="Rope"></li>
+                <li class="hanger position-2">
+                    <div class="board cloud-3 swing-1"><div class="light orange b phase-1 swing-1"></div>
+                </li>
+                <li class="hanger position-4">
+                    <div class="board cloud-4 swing-3"><div class="light orange b phase-2 swing-3"></div>
+                </li>
+                <!--<li class="hanger position-8">
+                    <div class="board birds swing-5"></div>
+                </li>-->
+            </ul>
+        </li>
+        <li class="layer" data-depth="0.20">
+            <div class="title-box">
+                <h1 class="title">&nbsp;Whiskey<em>Batch</em>&nbsp;</h1>
+            </div>
+        </li>
+        <li class="layer" data-depth="0.60">
+            <ul class="rope depth-60">
+                <li><img src="/images/rope.png" alt="Rope"></li>
+                <!--<li class="hanger position-3">
+                    <div class="board birds swing-5"></div>
+                </li>-->
+                <li class="hanger position-6">
+                    <div class="board cloud-2 swing-2"><div class="light orange b phase-3 swing-2"></div>
+                </li>
+                <li class="hanger position-8">
+                    <div class="board cloud-1 swing-4"><div class="light orange b phase-4 swing-4"></div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<section id="about" class="wrapper about hide accelerate">
+    <div class="cell accelerate">
+        <div class="cables center accelerate">
+            <div class="panel accelerate">
+                <header>
+                    <h1>Whiskey<em>Batch</em></h1>
+                </header>
+                <p>Blah, blah, blah, some shit about who we are and what we do.</p>
+                <p>Batches of hand-picked whisky's brought to you by<br><a href="http://www.wagerfield.com/" target="_blank">Matthew Flinn</a> &amp; <a href="http://cargocollective.com/whydontwetry" target="_blank">Cory Jez</a> &amp; <a href="">Andrew Plofchan</a>.</p>
+                <ul class="links">
+                    <li><a href="https://github.com/wagerfield/parallax/archive/master.zip">Login</a></li>
+                    <li><a target="_blank" href="https://github.com/wagerfield/parallax">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <button id="toggle" class="toggle i">
+    <div class="cross">
+        <div class="x"></div>
+        <div class="y"></div>
+    </div>
+    </button>
+</section>
+<script type="text/javascript">
+    $(function() {
+        $('#nav-wrapper').height($("#nav").height());
+        
+        $('#nav').affix({
+            offset: { top: $('#nav').offset().top }
+        });
+    });
+    $(document).ready(function() {
+        $('#scene').parallax();
+    });
+</script>

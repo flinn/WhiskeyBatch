@@ -1,0 +1,2 @@
+# WhiskeyBatch
+### a Sails application
